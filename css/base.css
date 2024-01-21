@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --dark: #252525;
+    --brown: #E0BEA2;
+    --RE: 'RE', sans-serif;
+    --RL: 'RL', sans-serif;
+}
+
+body {
+    font-family: var(--RL);
+    color: var(--dark);
+}   
+
+a {
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, input, button {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}

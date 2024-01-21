@@ -1,0 +1,229 @@
+.header {
+  height: 100svh;
+  background: url(../img/header.png) center/cover no-repeat;
+  margin-bottom: 100px;
+}
+
+.header__wrap {
+  position: relative;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header__nav-catalogue {
+  display: flex;
+  gap: 104px;
+}
+
+.header__nav-catalogue-link-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.header__nav-catalogue-link-icon rect {
+  transition: 0.3s;
+}
+
+.header__nav-catalogue-link:hover .header__nav-catalogue-link-icon rect {
+  fill: var(--brown);
+}
+
+.header__nav-catalogue-list {
+  display: flex;
+  gap: 26px;
+}
+
+.header__nav-catalogue-list-item-link {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.header__nav-catalogue-list-item-link:hover {
+  color: var(--brown);
+}
+
+.header__nav-catalogue-logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.header__nav-interact {
+  display: flex;
+  gap: 76px;
+}
+
+.header__nav-interact-choose {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.header__nav-interact-choose-item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  top: 8px;
+  padding-bottom: 20px;
+}
+
+.header__nav-interact-choose-item-span {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.header__nav-interact-choose-item:hover .header__nav-interact-choose-item-span {
+  color: var(--brown);
+}
+
+.header__nav-interact-choose-item-icon path {
+  transition: 0.3s;
+}
+
+.header__nav-interact-choose-item:hover .header__nav-interact-choose-item-icon path {
+  fill: var(--brown);
+}
+
+.header__nav-interact-choose-item-dropdown {
+  max-width: 50px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  display: none;
+  transform: translateY(100%);
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.header__nav-interact-choose-item:last-child ul {
+  bottom: -50px;
+}
+
+.header__nav-interact-choose-item:hover .header__nav-interact-choose-item-dropdown {
+  display: block;
+  transform: translateY(0);
+}
+
+.header__nav-interact-choose-item-dropdown-item {
+  padding: 5px;
+  width: 100%;
+  display: block;
+  background: var(--white);
+  transition: 0.3s;
+}
+
+.header__nav-interact-choose-item-dropdown-item-link {
+  color: var(--brown);
+  font-size: 14px;
+}
+
+.header__nav-interact-choose-item-dropdown-item:hover .header__nav-interact-choose-item-dropdown-item-link {
+  color: var(--dark);
+}
+
+.header__nav-interact-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.header__nav-interact-icons-link-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.header__nav-interact-icons-link-icon path {
+  transition: 0.3s;
+}
+
+.header__nav-interact-icons-link:hover .header__nav-interact-icons-link-icon path {
+  fill: var(--brown);
+}
+
+.header__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.header__desc-title {
+  font-size: clamp(1.875rem, 1.499rem + 1.88vw, 2.875rem);
+  line-height: 54px;
+  color: var(--white);
+}
+
+.header__desc-line {
+  width: 120px;
+  height: 1px;
+  background: var(--white);
+}
+
+.header__desc-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.header__desc-link-span {
+  line-height: 19px;
+  color: var(--white);
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.header__desc-link:hover .header__desc-link-span {
+  color: var(--brown);
+}
+
+.header__desc-link-icon path {
+  transition: 0.3s;
+}
+
+.header__desc-link:hover .header__desc-link-icon path {
+  fill: var(--brown);
+}
+
+.header__desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 992px) {
+  .header__nav {
+    flex-direction: column;
+  }
+
+  .header__nav-logo {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav-catalogue {
+    gap: 15px;
+  }
+
+  .header__nav-interact {
+    gap: 15px;
+  }
+
+  .header__nav-interact-icons {
+    gap: 15px;
+  }
+}
